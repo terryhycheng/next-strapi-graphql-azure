@@ -1,9 +1,10 @@
-import { CodegenConfig } from "@graphql-codegen/cli";
+import type { CodegenConfig } from "@graphql-codegen/cli";
 
 const config: CodegenConfig = {
-  schema: "http://127.0.0.1:1337/graphql",
-  documents: ["app/**/*.{ts,tsx"],
-  ignoreNoDocuments: true,
+  overwrite: true,
+  schema: "http://0.0.0.0:1337/graphql",
+  documents: "app/**/*.tsx",
+  watch: true,
   generates: {
     "./gql/": {
       preset: "client",

@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "web:dev": "cd web && yarn dev",
-    "web:codegen": "cd web && yarn codegen",
     "server:dev": "cd server && yarn develop",
-    "dev": "concurrently \"yarn web:dev\" \"yarn server:dev\" \"yarn web:codegen\""
+    "dev": "concurrently \"yarn web:dev\" \"yarn server:dev\""
   },
   "keywords": [],
   "author": "",
